@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateCustomerController">
+    <children>
+        <Label layoutX="36.0" layoutY="121.0" text="Customer ID" />
+        <Label layoutX="16.0" layoutY="157.0" text="Customer Name" />
+        <Label layoutX="54.0" layoutY="191.0" text="Address" />
+        <Label layoutX="39.0" layoutY="226.0" text="Postal Code" />
+        <Label layoutX="54.0" layoutY="259.0" text="Phone" />
+        <Label layoutX="219.0" layoutY="297.0" text="First Level Division" />
+        <Label layoutX="21.0" layoutY="297.0" text="Country" />
+        <TextField fx:id="CustomerIDField" disable="true" layoutX="114.0" layoutY="117.0" prefHeight="25.0" prefWidth="68.0" promptText="(Auto)" />
+        <TextField fx:id="CustomerNameField" layoutX="116.0" layoutY="153.0" prefHeight="25.0" prefWidth="162.0" />
+        <TextField fx:id="AddressField" layoutX="116.0" layoutY="187.0" prefHeight="25.0" prefWidth="342.0" />
+        <TextField fx:id="PostalCodeField" layoutX="116.0" layoutY="222.0" prefHeight="25.0" prefWidth="162.0" />
+        <TextField fx:id="PhoneField" layoutX="116.0" layoutY="255.0" prefHeight="25.0" prefWidth="162.0" />
+        <ComboBox fx:id="ComboFLDBox" layoutX="321.0" layoutY="293.0" prefHeight="25.0" prefWidth="162.0" promptText="(Select country first)" />
+        <ComboBox fx:id="ComboCountry" layoutX="77.0" layoutY="293.0" onAction="#passCountry" prefHeight="25.0" prefWidth="134.0" />
+        <Button layoutX="124.0" layoutY="358.0" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="25.0" prefWidth="87.0" text="Save" />
+        <Button layoutX="222.0" layoutY="358.0" mnemonicParsing="false" onAction="#resetFields" prefHeight="25.0" prefWidth="87.0" text="Reset" />
+        <Button layoutX="320.0" layoutY="358.0" mnemonicParsing="false" onAction="#toCustomerGUI" prefHeight="25.0" prefWidth="87.0" text="Close" />
+      <Label layoutX="155.0" layoutY="42.0" text="Customer Update">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

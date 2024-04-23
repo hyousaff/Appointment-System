@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="452.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerController">
+    <children>
+        <Label layoutX="15.0" layoutY="120.0" text="Customer ID" />
+        <Label layoutX="15.0" layoutY="158.0" text="Customer Name" />
+        <Label layoutX="37.0" layoutY="192.0" text="Address" />
+        <Label layoutX="27.0" layoutY="227.0" text="Postal Code" />
+        <Label layoutX="42.0" layoutY="264.0" text="Phone" />
+        <Label layoutX="210.0" layoutY="306.0" text="First Level Division" />
+        <Label layoutX="25.0" layoutY="306.0" text="Country" />
+        <TextField disable="true" layoutX="110.0" layoutY="116.0" prefHeight="25.0" prefWidth="68.0" promptText="(Auto)" />
+        <TextField fx:id="customerNameField" layoutX="110.0" layoutY="154.0" prefHeight="25.0" prefWidth="208.0" />
+        <TextField fx:id="addressField" layoutX="110.0" layoutY="188.0" prefHeight="25.0" prefWidth="334.0" />
+        <TextField fx:id="postalcodeField" layoutX="110.0" layoutY="223.0" prefHeight="25.0" prefWidth="149.0" />
+        <TextField fx:id="phoneField" layoutX="110.0" layoutY="260.0" />
+        <ComboBox fx:id="FLDbox" layoutX="315.0" layoutY="302.0" prefHeight="25.0" prefWidth="149.0" promptText="(Select country first)" />
+        <ComboBox fx:id="countryBox" layoutX="82.0" layoutY="302.0" onAction="#passCountry" prefHeight="25.0" prefWidth="116.0" />
+        <Button layoutX="127.0" layoutY="369.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="25.0" prefWidth="64.0" text="Add" />
+        <Button layoutX="210.0" layoutY="369.0" mnemonicParsing="false" onAction="#resetFields" prefHeight="25.0" prefWidth="64.0" text="Reset" />
+        <Button layoutX="289.0" layoutY="369.0" mnemonicParsing="false" onAction="#toCustomerGUI" prefHeight="25.0" prefWidth="64.0" text="Close" />
+      <Label layoutX="172.0" layoutY="31.0" text="Add Customer">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
